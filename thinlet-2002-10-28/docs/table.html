@@ -1,0 +1,126 @@
+<html><head><title>Thinlet - Table</title>
+<link rel="stylesheet" href="style.css" type="text/css">
+<script language="JavaScript" src="style.js"></script>
+</head>
+
+<body bgcolor="#ffffff" topmargin="0" leftmargin="0" marginwidth="0" marginheight="0">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+	<tr>
+		<td class="ht" rowspan="3"><img src="logo.gif" width="175" height="31"></td>
+		<td class="ht" height="15" width="1600">&nbsp;F O R &middot; R E A L L Y &middot; T H I N &middot; C L I E N T S</td>
+	</tr><tr>
+		<td class="hm" height="15" nowrap>
+			<a href="index.html" class="hn" onmouseover="self.status=''; return true">&nbsp;Home&nbsp;</a> |
+<a href="overview.html" class="hn" onmouseover="self.status=''; return true">&nbsp;Overview&nbsp;</a> |
+<span class="hs">&nbsp;Widgets&nbsp;</span> |
+<a href="offdemo.html" class="hn" onmouseover="self.status=''; return true">&nbsp;Demo&nbsp;</a> |
+<a href="offlicense.html" class="hn" onmouseover="self.status=''; return true">&nbsp;License&nbsp;</a> |
+<a href="history.html" class="hn" onmouseover="self.status=''; return true">&nbsp;History&nbsp;</a></td>
+	</tr><tr>
+		<td class="hb" height="1"><spacer type="block" height="1"></td>
+	</tr>
+</table>
+
+<table border="0" cellpadding="0" cellspacing="0">
+	<tr>
+		<td class="mb" width="8"><spacer type="block" width="8"></td>
+		<td class="mb" width="151" height="320"><spacer type="block" width="151"><br>
+
+		&raquo; <a href="component.html" onmouseover="self.status=''; return true">Component</a><br>&raquo; <a href="label.html" onmouseover="self.status=''; return true">Label</a><br>&raquo; <a href="button.html" onmouseover="self.status=''; return true">Button</a><br>&raquo; <a href="checkbox.html" onmouseover="self.status=''; return true">CheckBox</a><br>&raquo; <a href="togglebutton.html" onmouseover="self.status=''; return true">ToggleButton</a><br>&raquo; <a href="combobox.html" onmouseover="self.status=''; return true">ComboBox</a><br>&raquo; <a href="textfield.html" onmouseover="self.status=''; return true">TextField</a><br>&raquo; <a href="passwordfield.html" onmouseover="self.status=''; return true">PasswordField</a><br>&raquo; <a href="textarea.html" onmouseover="self.status=''; return true">TextArea</a><br>&raquo; <a href="tabbedpane.html" onmouseover="self.status=''; return true">TabbedPane</a><br>&raquo; <a href="panel.html" onmouseover="self.status=''; return true">Panel</a><br>&raquo; <a href="desktop.html" onmouseover="self.status=''; return true">Desktop</a><br>&raquo; <a href="dialog.html" onmouseover="self.status=''; return true">Dialog</a><br>&raquo; <a href="spinbox.html" onmouseover="self.status=''; return true">SpinBox</a><br>&raquo; <a href="progressbar.html" onmouseover="self.status=''; return true">ProgressBar</a><br>&raquo; <a href="slider.html" onmouseover="self.status=''; return true">Slider</a><br>&raquo; <a href="splitpane.html" onmouseover="self.status=''; return true">SplitPane</a><br>&raquo; <a href="list.html" onmouseover="self.status=''; return true">List</a><br>&raquo; <b>Table</b><br>&raquo; <a href="tree.html" onmouseover="self.status=''; return true">Tree</a><br>&raquo; <a href="separator.html" onmouseover="self.status=''; return true">Separator</a><br>&raquo; <a href="menubar.html" onmouseover="self.status=''; return true">MenuBar</a><br>
+
+		</td>
+		<td class="md" width="1"><spacer type="block" width="1"></td>
+		<td class="mt" width="15"><spacer type="block" width="15"></td>
+		<td class="mt"><br>
+
+		<b>Table</b><br>
+A table presents data in a two-dimensional table format, allows to select
+	rows, has header, and internally handles scrolling.
+	The following example table includes two columns ('A', and 'B'), and
+	two rows, the first row is selected, but allows to select multiple rows.<br>
+<table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td class="code"><font color="#000080">&lt;</font><font color="#800000"><b>table</b></font>  selection=<font color="#008000">&quot;multiple&quot;</font><font color="#000080">&gt;</font><br>
+&nbsp;&nbsp;<font color="#000080">&lt;</font><font color="#800000"><b>column</b></font>  text=<font color="#008000">&quot;A&quot;</font> width=<font color="#008000">&quot;24&quot;</font> <font color="#000080">/&gt;</font><font color="#000080">&lt;</font><font color="#800000"><b>column</b></font>  text=<font color="#008000">&quot;B&quot;</font> <font color="#000080">/&gt;</font><br>
+&nbsp;&nbsp;<font color="#000080">&lt;</font><font color="#800000"><b>row</b></font>  selected=<font color="#008000">&quot;true&quot;</font><font color="#000080">&gt;</font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#000080">&lt;</font><font color="#800000"><b>cell</b></font>  text=<font color="#008000">&quot;a1&quot;</font> <font color="#000080">/&gt;</font><font color="#000080">&lt;</font><font color="#800000"><b>cell</b></font>  text=<font color="#008000">&quot;b1&quot;</font> enabled=<font color="#008000">&quot;false&quot;</font> <font color="#000080">/&gt;</font><br>
+&nbsp;&nbsp;<font color="#000080">&lt;/</font><font color="#800000"><b>row</b></font><font color="#000080">&gt;</font><br>
+&nbsp;&nbsp;<font color="#000080">&lt;</font><font color="#800000"><b>row</b></font><font color="#000080">&gt;</font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#000080">&lt;</font><font color="#800000"><b>cell</b></font>  text=<font color="#008000">&quot;a2&quot;</font> <font color="#000080">/&gt;</font><font color="#000080">&lt;</font><font color="#800000"><b>cell</b></font>  text=<font color="#008000">&quot;b2&quot;</font> <font color="#000080">/&gt;</font><br>
+&nbsp;&nbsp;<font color="#000080">&lt;/</font><font color="#800000"><b>row</b></font><font color="#000080">&gt;</font><br>
+<font color="#000080">&lt;/</font><font color="#800000"><b>table</b></font><font color="#000080">&gt;</font></td></tr></table>
+<br><table border="0" cellpadding="1" cellspacing="0">
+<caption class="tc">Parameters</caption>
+<tr><td class="th">Name</td><td class="th">Type</td><td class="th">Default</td><td class="th">Description</td></tr><tr><td class="to">selection</td><td class="to">choice</td><td class="to">single</td><td class="to">
+			Possible values are: single, interval, and multiple. The default
+			single value allows to select one row at a time, the interval
+			value to select one contiguous range of rows, and the multiple
+			value to select one or more contiguous ranges of rows.
+		</td></tr>
+<tr><td class="te">action</td><td class="te">method</td><td class="te">null</td><td class="te">
+			Calls the method whenever the selection changes.
+		</td></tr>
+<tr><td class="to" colspan="4">
+			name, enabled, visible, tooltip, property, width, height, colspan, rowspan,
+			weightx, weighty, halign, and valign parameters are similar to component
+		</td></tr>
+</table>
+<br><br><b>Column</b><br>
+Table header includes the column texts, these items defines the column
+		widths. The key for the list of columns is 'column'.<br>
+<br><table border="0" cellpadding="1" cellspacing="0">
+<caption class="tc">Parameters</caption>
+<tr><td class="th">Name</td><td class="th">Type</td><td class="th">Default</td><td class="th">Description</td></tr><tr><td class="to">width</td><td class="to">integer</td><td class="to">80</td><td class="to">
+				The width of the column.
+			</td></tr>
+<tr><td class="te" colspan="4">
+				name, text, icon, and alignment parameters are described at label
+			</td></tr>
+</table>
+<br><br><b>Row</b><br>
+Table contains rows (and columns for the header),
+		and row contains cells. The 'row' key identifies the list of rows.
+		An entire row (not cell) is selectable in a table.<br>
+<br><table border="0" cellpadding="1" cellspacing="0">
+<caption class="tc">Parameters</caption>
+<tr><td class="th">Name</td><td class="th">Type</td><td class="th">Default</td><td class="th">Description</td></tr><tr><td class="to">selected</td><td class="to">boolean</td><td class="to">false</td><td class="to">
+				True if currently selected the entire row.
+			</td></tr>
+</table>
+<br><br><b>Cell</b><br>
+Cell displays a short text and icon, its height is equals with the
+		row's height, and its width is defined in the header column.<br>
+<br><table border="0" cellpadding="1" cellspacing="0">
+<caption class="tc">Parameters</caption>
+<tr><td class="th">Name</td><td class="th">Type</td><td class="th">Default</td><td class="th">Description</td></tr><tr><td class="to" colspan="4">
+				name, enabled, text, icon, alignment, tooltip, and property parameters
+				are similar to combobox choice
+			</td></tr>
+</table>
+<br><table border="0" cellpadding="1" cellspacing="0">
+<caption class="tc">Keyboard-actions</caption>
+<tr><td class="th">Operation</td><td class="th">Action</td></tr><tr><td class="to">Up arrow</td><td class="to">Selects previous row</td></tr>
+<tr><td class="te">Down arrow</td><td class="te">Selects next row</td></tr>
+<tr><td class="to">Home</td><td class="to">Selects first row</td></tr>
+<tr><td class="te">End</td><td class="te">Selects last row</td></tr>
+<tr><td class="to">Page Up</td><td class="to">Selects row one view up</td></tr>
+<tr><td class="te">Page Down</td><td class="te">Selects row one view down</td></tr>
+<tr><td class="to">+Shift</td><td class="to">Extends selection</td></tr>
+<tr><td class="te">+Ctrl</td><td class="te">Set lead row</td></tr>
+<tr><td class="to">Space</td><td class="to">Selects lead row</td></tr>
+<tr><td class="te">Ctrl-A, Ctrl-Slash</td><td class="te">Selects all</td></tr>
+<tr><td class="to">Ctrl-Backslash</td><td class="to">Deselects all</td></tr>
+<tr><td class="te">Tab, Shift-Tab</td><td class="te">Navigate forward, backward</td></tr>
+</table>
+
+
+		<br></td>
+	</tr>
+</table>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+	<tr><td class="md" height="1"><spacer type="block" height="1"></td></tr>
+	<tr><td class="bt">Copyright &copy; 2002 Robert Bajzát
+		- <a href="mailto:info@thinlet.com">info@thinlet.com</a> -
+		All rights reserved.</td></tr>
+</table>
+</body>
+</html>

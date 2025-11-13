@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="widget.xsl"?>
+<!-- - - - button - - - -->
+<widget class="button" title="Button">
+	<p>The first button below displays a short text string and an image.
+	Its content is on the left and centered vertically. The second button
+	resembles an HTML link, and when pressed invokes the action "goHome".</p>
+<xul><![CDATA[<button text="Button" icon="image.gif" alignment="left" tooltip="ToolTip" />
+<button text="www.thinlet.com" type="link" action="goHome" />]]></xul>
+	<parameters>
+		<parameter name="text" type="string">
+			The text string that the button displays.
+		</parameter>
+		<parameter name="icon" type="icon">
+			The icon image that the button displays. Icons are always displayed to the left of text (if any).
+		</parameter>
+		<parameter name="alignment" type="choice" default="center">
+			The alignment of the text and image similar to label.
+			Possible values are: center, left, and right. The default value is center.
+		</parameter>
+		<parameter name="mnemonic" type="integer" default="-1">
+			Specifies the index of underlined char, and the key combination (alt+mnemonic)
+			which invokes the (not necessarily focused, but enabled and visible)
+			button's action listener.
+		</parameter>
+		<parameter name="action" type="method">
+			Invokes the given method when the button is pressed by mouse or keyboard.
+		</parameter>
+		<parameter name="type" type="choice" default="normal">
+			Possible values are: normal, default, cancel, and link. The default value is normal.
+			Default, and cancel values are for dialog control. Link changes the appearance of
+			button so that it resembles HTML link.
+		</parameter>
+		<parameter extend="component">
+			name, enabled, visible, tooltip, property, i18n, width, height, colspan, rowspan,
+			weightx, weighty, halign, and valign parameters are similar to component
+		</parameter>
+	</parameters>
+	<keys>
+		<key sequence="Spacebar">Activates button</key>
+		<key sequence="Tab, Shift-Tab">Navigate forward, backward</key>
+	</keys>
+</widget>

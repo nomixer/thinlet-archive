@@ -1,0 +1,26 @@
+body { background: #ffffff; }
+td, input, textarea, caption, p { font: normal 8pt Verdana,Arial,Helvetica,sans-serif; }
+p { margin-top: 6pt; margin-bottom: 6pt; }
+td { vertical-align: top; }
+a:link, a:visited, a:active { color: #3399cc; text-decoration: none; }
+a:hover { color: #ff9933; text-decoration: underline; }
+
+.ht { background: #000000; color: #999999; vertical-align: middle; }
+.hm { background: #3399cc; vertical-align: bottom; }
+a.hn:link, a.hn:visited, a.hn:active { color: #000000; }
+a.hn:hover { color: #cccccc; background: #ff9933; text-decoration: none; }
+.hs { background: #000000; color: #cccccc; font-weight: bold; }
+.hb { background: #000000; }
+
+.mb { background: #ededed; }
+.md { background: #999999; }
+.mt { }
+.bt { color: #cccccc; text-align: right; }
+
+.th, .to, .te, .tn { padding-left: 4pt; padding-right: 4pt;
+	border-bottom: 1pt solid #cccccc; text-align: left; }
+.th { background: #ededed; color: #666666; font-weight: bold;
+	border-top: 1pt solid #cccccc; }
+.te { background: #ededed; }
+.tn { background: #ededed; color: #666666; font-weight: bold; }
+.tc { color: #666666; font-weight: bold; text-align: left; }

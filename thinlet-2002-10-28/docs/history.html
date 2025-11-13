@@ -1,0 +1,178 @@
+<html><head><title>Thinlet - History</title>
+<link rel="stylesheet" href="style.css" type="text/css">
+<script language="JavaScript" src="style.js"></script>
+</head>
+
+<body bgcolor="#ffffff" topmargin="0" leftmargin="0" marginwidth="0" marginheight="0">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+	<tr>
+		<td class="ht" rowspan="3"><img src="logo.gif" width="175" height="31"></td>
+		<td class="ht" height="15" width="1600">&nbsp;F O R &middot; R E A L L Y &middot; T H I N &middot; C L I E N T S</td>
+	</tr><tr>
+		<td class="hm" height="15" nowrap>
+			<a href="index.html" class="hn" onmouseover="self.status=''; return true">&nbsp;Home&nbsp;</a> |
+<a href="overview.html" class="hn" onmouseover="self.status=''; return true">&nbsp;Overview&nbsp;</a> |
+<a href="component.html" class="hn" onmouseover="self.status=''; return true">&nbsp;Widgets&nbsp;</a> |
+<a href="offdemo.html" class="hn" onmouseover="self.status=''; return true">&nbsp;Demo&nbsp;</a> |
+<a href="offlicense.html" class="hn" onmouseover="self.status=''; return true">&nbsp;License&nbsp;</a> |
+<span class="hs">&nbsp;History&nbsp;</span></td>
+	</tr><tr>
+		<td class="hb" height="1"><spacer type="block" height="1"></td>
+	</tr>
+</table>
+
+<table border="0" cellpadding="0" cellspacing="0">
+	<tr>
+		<td class="mb" width="8"><spacer type="block" width="8"></td>
+		<td class="mb" width="151" height="320"><spacer type="block" width="151"><br>
+
+		This page contains the history of changes,
+known bugs and unimplemented features since version 2002.06.09.
+Please report new bug, request a feature,
+or submit an ease of use issue using the online forum at
+<a href="http://www.thinlet.com">thinlet.com</a>.
+
+
+
+		</td>
+		<td class="md" width="1"><spacer type="block" width="1"></td>
+		<td class="mt" width="15"><spacer type="block" width="15"></td>
+		<td class="mt"><br>
+
+		
+
+<b>Changes for the fifth beta (<i>2002.10.28.</i>)</b>:
+
+<ul>
+<li>parameters and more event handlers are available (set/getMethod methods are removed), see the modified Calculator example</li>
+<li>JavaDoc generated APIdoc using a custom doclet</li>
+<li>mousewheel works compiled with 1.4 too</li>
+<li>tooltip remains inside the thinlet area</li>
+<li>wrap textarea text, move caret up/down by x position not character count</li>
+<li>rectangle and image paint differences is handled for Zaurus and iPAQ</li>
+<li>destroy() is called by the FrameLauncher if the window was closing to allow the application to e.g. save the changes</li>
+<li>DOM like interface for the internal xml parser (parseDOM, getDOMAttribute, getDOMText, getDOMCount, getDOMNode)</li>
+<li>font bug fixed (ClearType on win, text rendering is done with antialiasing)</li>
+<li>togglebutton component similar to checkbox with toggle look</li>
+<li>combolist width is minimum the combobox width</li>
+<li>horizontal gradient for vertical scrollbars</li>
+<li>panel border (text, icon, and scrollable parameters are coming up)</li>
+<li>dialog remains inside desktop, internal desktop for MDI applications, bug fixes</li>
+<li>putProperty getProperty similar to Swing's put/getClientProperty, use property='key=value' format in the xml file for any component or item</li>
+<li>no NullPointerException for non-existent images in getIcon bug fixed</li>
+<li>AppletLauncher doLayout method is overwritten for resizeable applets, FrameLauncher size is max the ScreenSize</li>
+<li>getSelectedIndex(s), getSelectedItem(s) methods for list, table, and tree</li>
+</ul>
+
+<b>Changes for the fourth beta (<i>2002.09.15.</i>)</b>:
+
+<ul>
+<li>Moved to thinlet package.</li>
+<li>Extends lightweight Container, thus you can use it in a Swing application.</li>
+<li>Thinlet doesn't use double buffer, use thinlet.AppletLauncher and
+	thinlet.FrameLauncher for a standalone applet/application.</li>
+<li>Focus manager is modified for these and Java 1.4
+	(focus traversal keys are disabled for this component).</li>
+<li>Disabled tab of tabbedpane is not selectable with keyboard nor mouse.</li>
+<li>Tooltip property is availbale for combobox choices, tabbedpane tabs,
+	menus, menuitems, and checkboxmenuitems (list-items, table-columns,
+	table-cells, tree-nodes are coming up).</li>
+<li>Expand and collapse listener for tree. Tree node is selected when expanded/collapsed,
+	and its subnodes are deselected when collapsed.</li>
+<li>Layout bug fixed (infinite loop if panel.columns < component.colspan).</li>
+<li>Mouse wheel is supported on Java 1.4 (it is the same class using
+	reflection for this newly introduced feature).</li>
+<li>New getItems(), getClass(), getParent() public methods.</li>
+<li>MIDP version.</li>
+</ul>
+
+<b>Changes for the third beta (<i>2002.07.28.</i>)</b>:
+
+<ul>
+<li>Disabled combobox choice or menuitem is not selectable.</li>
+<li>Radio group behaviour for checkbox and checkboxmenuitem is implemented.</li>
+<li>Combobox has icon and looks like a button, index of the selected choice property is available.</li>
+<li>Thinlet's internal xml parser is made public for applications.</li>
+<li><code>getSelectedIndex</code> and <code>removeAll</code> methods for lists, tables, and trees.</li>
+<li>Component is default children id for tabbedpane and row for table (not required in <code>getItem</code> and <code>getCount</code> methods).</li>
+<li>Modal dialogs, focus cycles inside the dialog (pressing the tab key), F6 focuses outside components. Brings dialog to front.</li>
+<li>New demo application for amazon's web service.</li>
+</ul>
+
+<b>Changes for the second beta (<i>2002.06.30.</i>)</b>:
+
+<ul>
+<li>PasswordField.</li>
+<li>Shift-Tab focuses the previous focusable component.</li>
+<li>Draws mnemonic for label, button, and checkbox,
+and this parameter is also available for tab, menu, and menuitem.
+Still its behaviour hasn't implemented.</li>
+<li>Parses XML from inputstream too (e.g. from a servlet given by its URL)</li>
+<li>Invisible components in panels, tabbedpanes and splitpanes
+don't count in layout.</li>
+<li>Colors and fonts are customizable.</li>
+<li>Invokes action methods for list, table, and tree only when these are changed.</li>
+<li>Paint is optimized for performance in scrollable widgets.</li>
+<li>Repaints the changed component when visible, a bug fix.</li>
+</ul>
+
+<b>Unimplemented features and bugs since the first beta (<i>2002.06.09.</i>)</b>:
+
+<ul>
+<li><b>Component</b>: focus next component when disabled, set not visible,
+or removed. Use preferred width or height, now you have to set both
+values.</li>
+
+<li><b>Label</b>: mnemonic is unimplemented.
+Wrap lines at line-break characters, automatic word wrap.</li>
+
+<li><b>Button</b>: stay visually pressed for milliseconds using the keyboard.
+Set default and cancel buttons for a dialog.</li>
+
+<li><b>ComboBox</b>: choices could be tree, not only list.</li>
+
+<li><b>TextField</b>: filter characters for set text method.</li>
+
+<li><b>TextArea</b>: render and hadle small scrollbars better.</li>
+
+<li><b>TabbedPane</b>: none placement option (tabs not visible), scroll tabs.
+Change selected tab index when the focus id reqired in a non-visible tab by
+the application.</li>
+
+<li><b>Panel</b>: title, scrollpane if it is smaller than preferred,
+maybe collapse button.</li>
+
+<li><b>Dialog</b>: minimize, maximize,
+restore, and close buttons. Resizable. Modal dialog.</li>
+
+<li><b>SpinBox</b>: filter characters for keyboard input, set min and max
+values, number type.</li>
+
+<li><b>ProgressBar</b>: reverse the value-range for vertical bar. Specify label.</li>
+
+<li><b>Slider</b>: draw major and minor ticks, number or custom labels.</li>
+
+<li><b>SplitPane</b>: focus the previous focus owner when the splitpane
+losts the focus. You can set invalid divider value using the keyboard.</li>
+
+<li><b>List</b>: update selection range when its list or selection model is changed.</li>
+
+<li><b>Table</b>: implement resizable columns.</li>
+
+<li><b>MenuBar</b>: implement F10, mnemonics, keystroke accelerators.</li>
+
+<li><b>Parsing</b>: throw detailed exceptions.</li>
+</ul>
+
+		<br></td>
+	</tr>
+</table>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+	<tr><td class="md" height="1"><spacer type="block" height="1"></td></tr>
+	<tr><td class="bt">Copyright &copy; 2002 Robert Bajzát
+		- <a href="mailto:info@thinlet.com">info@thinlet.com</a> -
+		All rights reserved.</td></tr>
+</table>
+</body>
+</html>

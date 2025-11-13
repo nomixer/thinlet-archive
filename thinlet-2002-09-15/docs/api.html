@@ -1,0 +1,178 @@
+<html><head><title>Thinlet - API</title>
+<link rel="stylesheet" href="style.css" type="text/css">
+<script language="JavaScript" src="style.js"></script>
+</head>
+
+<body bgcolor="#ffffff" topmargin="0" leftmargin="0" marginwidth="0" marginheight="0">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+	<tr>
+		<td class="ht" rowspan="3"><img src="logo.gif" width="175" height="31"></td>
+		<td class="ht" height="15" width="1600">&nbsp;F O R &middot; R E A L L Y &middot; T H I N &middot; C L I E N T S</td>
+	</tr><tr>
+		<td class="hm" height="15" nowrap>
+			<a href="index.html" class="hn" onmouseover="self.status=''; return true">&nbsp;Home&nbsp;</a> |
+<span class="hs">&nbsp;Overview&nbsp;</span> |
+<a href="component.html" class="hn" onmouseover="self.status=''; return true">&nbsp;Widgets&nbsp;</a> |
+<a href="offdemo.html" class="hn" onmouseover="self.status=''; return true">&nbsp;Demo&nbsp;</a> |
+<a href="offlicense.html" class="hn" onmouseover="self.status=''; return true">&nbsp;License&nbsp;</a> |
+<a href="history.html" class="hn" onmouseover="self.status=''; return true">&nbsp;History&nbsp;</a></td>
+	</tr><tr>
+		<td class="hb" height="1"><spacer type="block" height="1"></td>
+	</tr>
+</table>
+
+<table border="0" cellpadding="0" cellspacing="0">
+	<tr>
+		<td class="mb" width="8"><spacer type="block" width="8"></td>
+		<td class="mb" width="151" height="320"><spacer type="block" width="151"><br>
+
+		This API documentation details the public methods of the Thinlet class.<br>
+<br>
+See the <a href="overview.html" onmouseover="self.status=''; return true">overview</a>
+for a simple calculator example.
+
+
+
+		</td>
+		<td class="md" width="1"><spacer type="block" width="1"></td>
+		<td class="mt" width="15"><spacer type="block" width="15"></td>
+		<td class="mt"><br>
+
+		
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td style="background-color: #ededed;"><font color="#800000"><b>public</b></font> <font color="#000080">Object</font> parse(<font color="#000080">String</font> path) <font color="#800000"><b>throws</b></font> <font color="#000080">Exception</font></td></tr></table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td style="background-color: #ededed;"><font color="#800000"><b>public</b></font> <font color="#000080">Object</font> parse(<font color="#000080">InputStream</font> inputstream) <font color="#800000"><b>throws</b></font> <font color="#000080">Exception</font></td></tr></table>
+Creates a component (and its subcomponents, and properties)
+from the given xml resource or the stream (e.g.
+<i>new URL("http://myserver/myservlet").openStream()</i>).
+The path is relative to your thinlet package or the classpath
+(if the path starts with / character).<br>
+<br>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td style="background-color: #ededed;"><font color="#800000"><b>public</b></font> <font color="#000080">Object</font> find(<font color="#000080">String</font> name)</td></tr></table>
+Identify a component object by name inside the desktop or the given
+component. Use Object class field to store a component.<br>
+<br>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td style="background-color: #ededed;"><font color="#800000"><b>public</b></font> <font color="#800000"><b>void</b></font> setString(<font color="#000080">Object</font> component, <font color="#000080">String</font> key, <font color="#000080">String</font> value)</td></tr></table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td style="background-color: #ededed;"><font color="#800000"><b>public</b></font> <font color="#800000"><b>void</b></font> setChoice(<font color="#000080">Object</font> component, <font color="#000080">String</font> key, <font color="#000080">String</font> value)</td></tr></table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td style="background-color: #ededed;"><font color="#800000"><b>public</b></font> <font color="#800000"><b>void</b></font> setBoolean(<font color="#000080">Object</font> component, <font color="#000080">String</font> key, <font color="#800000"><b>boolean</b></font> value)</td></tr></table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td style="background-color: #ededed;"><font color="#800000"><b>public</b></font> <font color="#800000"><b>void</b></font> setInteger(<font color="#000080">Object</font> component, <font color="#000080">String</font> key, <font color="#800000"><b>int</b></font> value)</td></tr></table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td style="background-color: #ededed;"><font color="#800000"><b>public</b></font> <font color="#800000"><b>void</b></font> setIcon(<font color="#000080">Object</font> component, <font color="#000080">String</font> key, <font color="#000080">Image</font> icon)</td></tr></table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td style="background-color: #ededed;"><font color="#800000"><b>public</b></font> <font color="#800000"><b>void</b></font> setMethod(<font color="#000080">Object</font> component, <font color="#000080">String</font> key, <font color="#000080">Method</font> method)</td></tr></table>
+Sets the given property pair (key and value) for the component.<br>
+<br>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td style="background-color: #ededed;"><font color="#800000"><b>public</b></font> <font color="#000080">String</font> getString(<font color="#000080">Object</font> component, <font color="#000080">String</font> key)</td></tr></table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td style="background-color: #ededed;"><font color="#800000"><b>public</b></font> <font color="#000080">String</font> getChoice(<font color="#000080">Object</font> component, <font color="#000080">String</font> key)</td></tr></table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td style="background-color: #ededed;"><font color="#800000"><b>public</b></font> <font color="#800000"><b>boolean</b></font> getBoolean(<font color="#000080">Object</font> component, <font color="#000080">String</font> key)</td></tr></table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td style="background-color: #ededed;"><font color="#800000"><b>public</b></font> <font color="#800000"><b>int</b></font> getInteger(<font color="#000080">Object</font> component, <font color="#000080">String</font> key)</td></tr></table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td style="background-color: #ededed;"><font color="#800000"><b>public</b></font> <font color="#000080">Image</font> getIcon(<font color="#000080">Object</font> component, <font color="#000080">String</font> key)</td></tr></table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td style="background-color: #ededed;"><font color="#800000"><b>public</b></font> <font color="#000080">Method</font> getMethod(<font color="#000080">Object</font> component, <font color="#000080">String</font> key)</td></tr></table>
+Returns the property value of the given component by the property key.<br>
+<br>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td style="background-color: #ededed;"><font color="#800000"><b>public</b></font> <font color="#000080">Image</font> getIcon(<font color="#000080">String</font> path)</td></tr></table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td style="background-color: #ededed;"><font color="#800000"><b>public</b></font> <font color="#000080">Image</font> getIcon(<font color="#000080">String</font> path, <font color="#800000"><b>boolean</b></font> preload)</td></tr></table>
+Creates an image, and loads it immediately by default.
+The path is relative to your thinlet package or the classpath
+(if the path starts with / character).<br>
+<br>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td style="background-color: #ededed;"><font color="#800000"><b>public</b></font> <font color="#000080">Object</font> getDesktop()</td></tr></table>
+Return the root object.<br>
+<br>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td style="background-color: #ededed;"><font color="#800000"><b>public</b></font> <font color="#000080">Object</font> create(<font color="#000080">String</font> classname)</td></tr></table>
+Creates a new component.<br>
+<br>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td style="background-color: #ededed;"><font color="#800000"><b>public</b></font> <font color="#800000"><b>void</b></font> add(<font color="#000080">Object</font> component)</td></tr></table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td style="background-color: #ededed;"><font color="#800000"><b>public</b></font> <font color="#800000"><b>void</b></font> add(<font color="#000080">Object</font> parent, <font color="#000080">Object</font> component)</td></tr></table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td style="background-color: #ededed;"><font color="#800000"><b>public</b></font> <font color="#800000"><b>void</b></font> add(<font color="#000080">Object</font> parent, <font color="#000080">Object</font> component, <font color="#800000"><b>int</b></font> index)</td></tr></table>
+Adds the specified component to the topmost position on the desktop. Or
+add it to the parent component (at the specified index).
+The following example fills a table with system property key and value pairs,
+the table (in an xml file) named <i>mytable</i> and has two columns
+(titled <i>Keys</i> and <i>Values</i>):<br>
+<table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td style="background-color: #ededed;">&nbsp;&nbsp;<font color="#000080">Object</font> table = find(<font color="#008000">&quot;mytable&quot;</font>);<br>
+&nbsp;&nbsp;<font color="#000080">Properties</font> sp = System.getProperties();<br>
+&nbsp;&nbsp;<font color="#800000"><b>for</b></font> (<font color="#000080">Enumeration</font> keys = sp.keys(); keys.hasMoreElements();) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#000080">String</font> key = (<font color="#000080">String</font>) keys.nextElement();<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#000080">Object</font> row = create(<font color="#008000">&quot;row&quot;</font>);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#000080">Object</font> keycell = create(<font color="#008000">&quot;cell&quot;</font>);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;setString(keycell, <font color="#008000">&quot;text&quot;</font>, key);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;add(row, keycell);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#000080">Object</font> valuecell = create(<font color="#008000">&quot;cell&quot;</font>);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;setString(valuecell, <font color="#008000">&quot;text&quot;</font>, sp.getProperty(key));<br>
+&nbsp;&nbsp;&nbsp;&nbsp;add(row, valuecell);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;add(table, row);<br>
+&nbsp;&nbsp;}</td></tr></table>
+<br>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td style="background-color: #ededed;"><font color="#800000"><b>public</b></font> <font color="#800000"><b>void</b></font> remove(<font color="#000080">Object</font> component)</td></tr></table>
+Removes the specified component from its parent.<br>
+<br>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td style="background-color: #ededed;"><font color="#800000"><b>public</b></font> <font color="#800000"><b>void</b></font> removeAll(<font color="#000080">Object</font> component)</td></tr></table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td style="background-color: #ededed;"><font color="#800000"><b>public</b></font> <font color="#800000"><b>void</b></font> removeAll(<font color="#000080">Object</font> component, <font color="#000080">String</font> key)</td></tr></table>
+Removes all children of the component (the default list or the specified).<br>
+<br>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td style="background-color: #ededed;"><font color="#800000"><b>public</b></font> <font color="#800000"><b>int</b></font> getCount(<font color="#000080">Object</font> component)</td></tr></table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td style="background-color: #ededed;"><font color="#800000"><b>public</b></font> <font color="#800000"><b>int</b></font> getCount(<font color="#000080">Object</font> component, <font color="#000080">String</font> key)</td></tr></table>
+Returns the count of subcomponents in the list of the given
+component. The list is identified by the key name for <i>tabbed pane</i>
+(<i>tab</i>, or <i>component</i>) or <i>table</i>
+(<i>column</i>, or <i>row</i>) The <i>component</i> and the <i>row</i>
+is the default key.<br>
+<br>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td style="background-color: #ededed;"><font color="#800000"><b>public</b></font> <font color="#800000"><b>int</b></font> getSelectedIndex(<font color="#000080">Object</font> component)</td></tr></table>
+Returns the index of the first selected item, node, or row in
+the given list, tree, or table. Rerturns -1 if no selected item.<br>
+<br>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td style="background-color: #ededed;"><font color="#800000"><b>public</b></font> <font color="#000080">Object</font> getItem(<font color="#000080">Object</font> component, <font color="#800000"><b>int</b></font> index)</td></tr></table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td style="background-color: #ededed;"><font color="#800000"><b>public</b></font> <font color="#000080">Object</font> getItem(<font color="#000080">Object</font> component, <font color="#000080">String</font> key, <font color="#800000"><b>int</b></font> index)</td></tr></table>
+Returns the subcomponent in the given component at the specified index.
+The following code lists the selected items of a list component
+named <i>mylist</i>:<br>
+<table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td style="background-color: #ededed;">&nbsp;&nbsp;<font color="#000080">Object</font> list = find(<font color="#008000">&quot;mylist&quot;</font>);<br>
+&nbsp;&nbsp;<font color="#800000"><b>int</b></font> n = getCount(list);<br>
+&nbsp;&nbsp;<font color="#800000"><b>for</b></font> (<font color="#800000"><b>int</b></font> i = 0; i &lt; n; i++) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#000080">Object</font> item = getItem(list, i);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#800000"><b>if</b></font> (getBoolean(item, <font color="#008000">&quot;selected&quot;</font>)) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(getString(item, <font color="#008000">&quot;text&quot;</font>));<br>
+&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+&nbsp;&nbsp;}</td></tr></table>
+<br>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td style="background-color: #ededed;"><font color="#800000"><b>public</b></font> <font color="#800000"><b>boolean</b></font> requestFocus(<font color="#000080">Object</font> component)</td></tr></table>
+Focus the given component (and the Thinlet component).<br>
+<br>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td style="background-color: #ededed;"><font color="#800000"><b>public</b></font> <font color="#800000"><b>void</b></font> setColors(<font color="#800000"><b>int</b></font> background, <font color="#800000"><b>int</b></font> text, <font color="#800000"><b>int</b></font> textbackground, <font color="#800000"><b>int</b></font> border, <font color="#800000"><b>int</b></font> disable, <font color="#800000"><b>int</b></font> hover, <font color="#800000"><b>int</b></font> press, <font color="#800000"><b>int</b></font> focus, <font color="#800000"><b>int</b></font> select)</td></tr></table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td style="background-color: #ededed;"><font color="#800000"><b>public</b></font> <font color="#800000"><b>void</b></font> setFont(<font color="#000080">Font</font> font)</td></tr></table>
+To customize the look and feel set the used 9 colors and the font.
+The scrollbars', spinbox arrows', etc. size is depends on the font size.<br>
+<br>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td style="background-color: #ededed;"><font color="#800000"><b>protected</b></font> <font color="#800000"><b>void</b></font> parseXML(<font color="#000080">InputStream</font> inputstream) <font color="#800000"><b>throws</b></font> <font color="#000080">Exception</font></td></tr></table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td style="background-color: #ededed;"><font color="#800000"><b>protected</b></font> <font color="#800000"><b>void</b></font> startElement(<font color="#000080">String</font> name, <font color="#000080">Hashtable</font> attributelist)</td></tr></table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td style="background-color: #ededed;"><font color="#800000"><b>protected</b></font> <font color="#800000"><b>void</b></font> characters(<font color="#000080">String</font> text)</td></tr></table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td style="background-color: #ededed;"><font color="#800000"><b>protected</b></font> <font color="#800000"><b>void</b></font> endElement()</td></tr></table>
+Parses the given resource and calls the methods, you can overwrite these.
+
+		<br></td>
+	</tr>
+</table>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+	<tr><td class="md" height="1"><spacer type="block" height="1"></td></tr>
+	<tr><td class="bt">Copyright &copy; 2002 Robert Bajzat
+		- <a href="mailto:info@thinlet.com">info@thinlet.com</a> -
+		All rights reserved.</td></tr>
+</table>
+</body>
+</html>

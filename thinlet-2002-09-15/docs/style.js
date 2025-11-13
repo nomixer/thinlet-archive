@@ -1,0 +1,6 @@
+if (navigator.appName == "Netscape")
+	if (navigator.appVersion.indexOf("X11") != -1)
+		document.write('<style>td, input, textarea, caption, p { font-size: 12pt; }</style>')
+	else document.write('<style>td, input, textarea, caption, p { font-size: 9pt; }</style>')
+if (navigator.appName == "Konqueror")
+	document.write('<style>td, input, textarea, caption, p { font-size: 12pt; }</style>')
